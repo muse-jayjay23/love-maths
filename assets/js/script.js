@@ -1,5 +1,4 @@
 // Allow DOM content to load first so that the function will only apply when all content is loaded in
-
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = this.getElementsByTagName("button");
 
@@ -16,9 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
+/**
+ * Generates a random number for use in the game.
+ */
 function runGame() {
-
+    let num1 = Math.floor(Math.random() * 25) + 1;
+    let num2 = Math.floor(Math.random() * 25) + 1;
 };
 
 function checkAnswer () {
